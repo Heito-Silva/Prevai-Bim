@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que horas o Sol...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input id="voltarBtn" type="button" value="<">
+
+    <main>
+
+        <div class="container">
+
+        <h1>Que horas o Sol...</h1>
+
+        <input type="number" class="form" id="latitude" placeholder="Latitude">
+
+        <input type="number" class="form" id="longitude" placeholder="Longitude"> 
+
+        <input type="button" id="botao" value="Enviar">
+    
+    </div>
+
+
+        <div id="resultado">
+
+            <div id="sunrise" class="infoBox">
+                <p id="sunriseTime">Nasce: </p>
+            </div>
+            <div id="sunset" class="infoBox">
+                <p id="sunsetTime">Se põe:</p>
+            </div>
+
+        </div>
+
+
+        <div class="salvos">
+            <div id="latlongDiv">
+                <p id="latitudeSalva">lat</p>
+                <p id="longitudeSalva">long</p>
+            </div>
+            <div id="horarioSalvo">
+                <div id="nascerSalvo">
+                    <p></p>
+                </div>
+                <div id="porSalvo">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

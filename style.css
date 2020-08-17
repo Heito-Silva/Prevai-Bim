@@ -1,0 +1,205 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #EDF5E0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Botão de voltar */
+
+#voltarBtn{
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    background-color: rgb(104, 101, 86) ;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    outline: none;   
+}
+
+#voltarBtn:hover{
+    cursor: pointer;
+}
+
+.container h1{
+    width: 150px;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+.container{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    height: 30px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+}
+
+/* Botão de enviar */
+
+#botao{
+    margin: 10px 0 0 0;
+    border: solid black 1px;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(104, 101, 86);
+    font-weight: bold;
+}
+
+#botao:hover{
+    cursor: pointer;
+}
+
+
+#resultado{
+    display: none;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+}
+
+#sunrise{
+    display: flex;
+    height: 125px;
+    width: 100%;
+    background-size: 250px;
+    color: rgb(0, 0, 0);
+    border-bottom: black solid 1px;
+}
+
+#sunset{
+    height: 125px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.infoBox{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.infoBox p{
+    width: 160px;
+    margin: 0 0 0 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* localStorage */
+
+.salvos{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 60px;
+    border: 1px solid black;
+    height: 70px;
+    width: 250px;
+    background-color: thistle;
+}
+
+#latlongDiv{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: lighter;
+    background-color: rgb(104, 101, 86);
+    color: white;
+    width: 100%;
+    height: 20px;
+}
+
+#latlongDiv p{
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 10px;
+}
+
+#horarioSalvo{
+    height: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#horarioSalvo p{
+    margin: 0;
+    padding: 0;
+}
+
+#nascerSalvo{
+    background-color: rgb(190, 187, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+#porSalvo{
+    background-color: rgb(75, 73, 65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+@media (orientation: landscape){
+    .salvos{
+        right: 20px;
+        bottom: 20px;
+        width: 200px;
+        height: 100px;
+
+    }
+
+    #horarioSalvo p{
+        font-size: 20px;
+    }
+}
